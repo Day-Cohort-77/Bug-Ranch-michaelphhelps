@@ -76,11 +76,17 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+
+   > The 'drovers' variable is given the value of the hireDrovers function, with the argument of 50 defined by the cattleToDrive parameter.
+   
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+
+   > the value of 'drovers' is an iterable object earlier declared to return the value from the function hireDrovers with the parameter of (cattleToDrive), and 'drover' is the variable that receives a value from the 'drovers' object through each iteration.
+
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+
+   > https://www.loom.com/share/fc13d86362c04f1f94568c7ba2574c3d?reminderToRecord=saveMeetingTime
+   
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,12 +94,17 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
-5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
-6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
 
+   > The code mentioned is a for loop that sets the value of forestNumber to 0 using let, and determines if the forestNumber is less than the areas.forests number created using a function createForests that returns a random number, then adds +1 using the increment operator. it then pushes the new forest value in the journey array.
+
+5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
+
+   >  database is declared as a variable that holds two separate arrays that is iterated through different modules throughout our bug wrangler ranch code.
+
+6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
+
+   > within the hireDrovers function, (herdSize) is the parameter that is then divided by 10 to declare the variable numberNeeded. the (herdSize) parameter is given its value via the argument of (cattleToDrive) declared in the main module.
+   
 ## When You Are Done
 
 After you have answered all the questions above, you need to push all of your code back up to Github. Follow these instructions.
