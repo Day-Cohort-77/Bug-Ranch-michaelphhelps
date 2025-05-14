@@ -81,7 +81,7 @@ Your journey will take you through the wildness of the American Midwest and acro
    
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
 
-   > the value of 'drovers' is an iterable object earlier declared to return the value from the function hireDrovers with the parameter of (cattleToDrive), and 'drover' is the variable that receives a value from the 'drovers' object through each iteration.
+   > the value of 'drovers' is an array earlier declared to return the value from the function hireDrovers with the parameter of (cattleToDrive), and 'drover' is the variable that receives a value from the 'drovers' object through each iteration.
 
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
 
@@ -99,11 +99,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
 
-   >  database is declared as a variable that holds two separate arrays that is iterated through different modules throughout our bug wrangler ranch code.
+   >  the database variable is an object that contains two arrays of objects that are iterated through different modules throughout our bug wrangler ranch code.
 
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
 
-   > within the hireDrovers function, (herdSize) is the parameter that is then divided by 10 to declare the variable numberNeeded. the (herdSize) parameter is given its value via the argument of (cattleToDrive) declared in the main module.
+   > within the hireDrovers function, (herdSize) is the parameter. the (herdSize) parameter is given its value via the argument of (cattleToDrive) declared in the main module.
    
 ## When You Are Done
 
